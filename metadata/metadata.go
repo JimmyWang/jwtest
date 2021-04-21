@@ -12,7 +12,11 @@ type DataSource struct {
 }
 
 type Connection struct {
-	// TOADD
+	Name string // 表单实际数据字段名称
+	DisplayName string // 页面显示名称
+	Editable bool // 是否可编辑
+	Value string // 值 (默认值到真实值)
+	ValueType  string // 数据类型
 }
 
 type EntityResource struct {
